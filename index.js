@@ -11,6 +11,7 @@ const projects = [
         name: 'Flower Quiz',
         desc: 'A ten question quiz on your knowledge of flowers. Progress is tracked and feedback is given after every question. When finished, your final score is displayed and the quiz can be restarted with the click of a button.',
         image: 'flower-quiz',
+        imageDesc:'Screenshot of flower quiz app.',
         tech: [technologies.html, technologies.css, technologies.javascript, technologies.jQuery],
         links: ['https://github.com/krissy16/flower-quiz', 'https://krissy16.github.io/flower-quiz/']
     }
@@ -84,7 +85,7 @@ function createProjectList(){
     for(let i=0; i<projects.length; i++){
         let icons = addIcons(i);
         projectListHTML.push(`<li class="project">\
-                                <img class="project-image" src="images/${projects[i].image}.png">\
+                                <img class="project-image" src="images/${projects[i].image}.png" alt="${projects[i].imageDesc}">\
                                 <section>\
                                     <h3 class="project-title">${projects[i].name}</h3>\
                                     <ul class="project-icons">${icons}</ul>\
