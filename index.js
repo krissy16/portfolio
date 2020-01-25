@@ -34,7 +34,6 @@ function handleClick(){
     });
 }
 
-//scrolls down to given class
 function scrollTo(divClass, event){
     event.preventDefault();
     $('html,body').animate({
@@ -98,8 +97,6 @@ function createProjectList(){
                                 </section>\
                             </li>`);
     }
-    
-    console.log(projectListHTML);
     return projectListHTML;
 }
 
