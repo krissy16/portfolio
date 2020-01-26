@@ -92,8 +92,8 @@ function createProjectList(){
                                     <p class="project-desc">${projects[i].desc}</p>\
                                     <section class="project-links">\
                                         <p class="project-link-text">Check out the project:</p>\
-                                        <a class="project-link" href="${projects[i].links[0]}">Code</a>\
-                                        <a class="project-link" href="${projects[i].links[1]}">Demo</a>\
+                                        <a class="project-link" href="${projects[i].links[0]}" target="_blank">Code</a>\
+                                        <a class="project-link" href="${projects[i].links[1]}" target="_blank">Demo</a>\
                                     </section>\
                                 </section>\
                             </li>`);
@@ -116,9 +116,16 @@ function addIcons(index){
     return icons.join(' ');
 }
 
+function clearForm(){
+    $('form').on('submit', function(event){
+        $('.contact-form').trigger("reset");
+    });
+}
+
 function uponStart(){
     addProjects();
     handleNav();
+    clearForm();
 }
 
 $(uponStart);
