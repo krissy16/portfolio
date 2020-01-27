@@ -116,16 +116,10 @@ function addIcons(index){
     return icons.join(' ');
 }
 
-function clearForm(){
-    $('form').on('submit', function(event){
-        $('.contact-form').trigger("reset");
-    });
-}
 
 function uponStart(){
     addProjects();
     handleNav();
-    clearForm();
 }
 
 $(uponStart);
