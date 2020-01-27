@@ -11,7 +11,9 @@
     <link rel="icon" href="my-favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
@@ -40,24 +42,24 @@
         <section class="contact-section">
             <h2 class="contact-section-title title">Get in Touch</h2>
             <form class="contact-form" action="https://mailthis.to/a.kcharmant@gmail.com" method="POST" encType="multipart/form-data">
-                <section class="contact-name half">
+                <div class="contact-name half">
                     <label for="name">Name:</label>
                     <input id="name" name="name" type="text">
-                </section>
-                <section class="contact-email half">
+                </div>
+                <div class="contact-email half">
                     <label for="email">Email:</label>
                     <input id="email" name="email" type="email">
-                </section>
-                <section class="contact-message">
+                </div>
+                <div class="contact-message">
                     <label for="message">Message: </label>
                     <textarea rows="4" id="message" name="message"></textarea>
-                </section>
+                </div>
                 <button class="submit-btn" type="submit">Submit</button>
             </form>
         </section>
     </main> 
     <footer>
-        <address class="contact-info">
+        <section class="contact-info">
             <section class="email-info">
                 <h4 class="email-text">Email: </h4>
                 <a class="email-content" href="mailto:a.kcharmant@gmail.com">a.kcharmant@gmail.com</a>
@@ -73,9 +75,9 @@
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                 </svg></a>
             </section>
-        </address>
+        </section>
     </footer>
    
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
