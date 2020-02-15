@@ -124,7 +124,7 @@ F1F4F3 (whiteish)
         background-color: #3a4e78;
         min-height: calc(100vh - 120px); 
         height: auto;
-        padding: 10% 0;
+        padding-top: 10%;
         position: relative;
     }
     .contact-section, .contact-section-title{
@@ -201,7 +201,6 @@ F1F4F3 (whiteish)
         z-index: 1;
     }
     .welcome-section{
-        /* height: calc(100vh - 50px); */
         height:auto;
         min-height: calc(100vh - 50px);
     }
@@ -258,8 +257,8 @@ F1F4F3 (whiteish)
         font-size: 18px;
     }
     .contact-section{
-        height:auto;
         min-height: calc(100vh - 193px);
+        height:auto;
         padding-top: 5%;
     }
     .contact-form{

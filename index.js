@@ -14,32 +14,38 @@ const projects = [
         imageDesc:'Screenshot of flower quiz app.',
         tech: [technologies.html, technologies.css, technologies.javascript, technologies.jQuery],
         links: ['https://github.com/krissy16/flower-quiz', 'https://krissy16.github.io/flower-quiz/']
+    },
+    {
+        name: 'Country Insight',
+        desc: 'Input any country name and recieve information about its currency, weather, holidays and more! This app is powered by four separete APIs',
+        image: 'country-insight',
+        imageDesc: 'Screenshot of Country Insight App',
+        tech: [technologies.html, technologies.css, technologies.javascript, technologies.jQuery],
+        links: ['https://github.com/krissy16/country-insight', 'https://krissy16.github.io/country-insight']
     }
 ];
 
 function handleClick(){
     $('.nav-welcome').on('click', function(event){
-       scrollTo(".welcome-section",event);
+       scrollTo('.welcome-section',event);
     });
     $('.nav-projects').on('click', function(event){
-        scrollTo(".project-section", event);
+        scrollTo('.project-section', event);
     });
     $('.nav-contact').on('click', function(event){
-        scrollTo(".contact-info", event);
+        scrollTo('.contact-info', event);
     });
     $('.project-btn').on('click', function(event){
-        scrollTo(".project-section", event);
+        scrollTo('.project-section', event);
     });
     $('.contact-btn').on('click', function(event){
-        scrollTo(".contact-section", event);
+        scrollTo('.contact-section', event);
     });
 }
 
 function scrollTo(divClass, event){
     event.preventDefault();
-    $('html,body').animate({
-        scrollTop: $($(divClass)).offset().top
-     });
+    $('html,body').animate({scrollTop: $(divClass).offset().top});
 }
 
 function handleScroll(){
@@ -66,7 +72,7 @@ function handleScroll(){
 
 function changeActive(section){
     $('nav li *').removeClass('active');
-    let activeClass = section + " > a";
+    let activeClass = section + ' > a';
     $(activeClass).addClass('active');
 }
 
@@ -77,23 +83,22 @@ function handleNav(){
 
 function addProjects(){
     $('.projects').html(createProjectList());
-
 }
 
 function createProjectList(){
     let projectListHTML = [];
     for(let i=0; i<projects.length; i++){
         let icons = addIcons(i);
-        projectListHTML.push(`<li class="project">\
-                                <img class="project-image" src="images/${projects[i].image}.png" alt="${projects[i].imageDesc}">\
+        projectListHTML.push(`<li class='project'>\
+                                <img class='project-image' src='images/${projects[i].image}.png' alt='${projects[i].imageDesc}'>\
                                 <section>\
-                                    <h3 class="project-title">${projects[i].name}</h3>\
-                                    <ul class="project-icons">${icons}</ul>\
-                                    <p class="project-desc">${projects[i].desc}</p>\
-                                    <section class="project-links">\
-                                        <p class="project-link-text">Check out the project:</p>\
-                                        <a class="project-link" href="${projects[i].links[0]}" target="_blank">Code</a>\
-                                        <a class="project-link" href="${projects[i].links[1]}" target="_blank">Demo</a>\
+                                    <h3 class='project-title'>${projects[i].name}</h3>\
+                                    <ul class='project-icons'>${icons}</ul>\
+                                    <p class='project-desc'>${projects[i].desc}</p>\
+                                    <section class='project-links'>\
+                                        <p class='project-link-text'>Check out the project:</p>\
+                                        <a class='project-link' href='${projects[i].links[0]}' target='_blank'>Code</a>\
+                                        <a class='project-link' href='${projects[i].links[1]}' target='_blank'>Demo</a>\
                                     </section>\
                                 </section>\
                             </li>`);
@@ -106,16 +111,15 @@ function addIcons(index){
     let currentProject = projects[index];
     for(let i=0; i<currentProject.tech.length; i++){
         let currentTech = currentProject.tech[i];
-        icons.push(`<li class="project-icon">\
-                        <svg viewBox="0 0 128 128" role="img">/
+        icons.push(`<li class='project-icon'>\
+                        <svg viewBox='0 0 128 128' role='img'>/
                             <title>${currentTech[0]}</title>\
-                            <path class="icon" ${currentTech[1]}\
+                            <path class='icon' ${currentTech[1]}\
                         </svg>\
                     </li>`);
     }
     return icons.join(' ');
 }
-
 
 function uponStart(){
     addProjects();
