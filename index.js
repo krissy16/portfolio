@@ -11,6 +11,14 @@ const technologies = {
 
 const projects = [
     {
+        name: 'Dream Diary',
+        desc: 'Dream Diary is a responsive web app that allows users to record their dreams and notes on those dreams.',
+        image: 'dream-diary',
+        imageDesc: 'Screenshot of dream diary app',
+        tech: [technologies.react, technologies.node, technologies.postgres,technologies.html, technologies.css, technologies.javascript],
+        links: ['https://github.com/krissy16/dream-diary', 'http://dream-diary.vercel.app/']
+    },
+    {
         name: 'Play With Me',
         desc: 'Play With Me is a fullstack responsive web app that allows users to browse, post, and comment on play date events.',
         image: 'play-with-me',
