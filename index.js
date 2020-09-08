@@ -12,7 +12,7 @@ const technologies = {
 const projects = [
     {
         name: 'Dream Diary',
-        desc: 'Dream Diary is a responsive web app that allows users to record their dreams and notes on those dreams.',
+        desc: 'Dream Diary is a responsive web app that allows users to record their dreams and notes on those dreams. I created this app for a family member who loves to record their dreams but often loses those notebooks. It\'s built for anyone who wants a more secure alternative to a notebook on the nightstand. ',
         image: 'dream-diary',
         imageDesc: 'Screenshot of dream diary app',
         tech: [technologies.react, technologies.node, technologies.postgres,technologies.html, technologies.css, technologies.javascript],
@@ -20,7 +20,7 @@ const projects = [
     },
     {
         name: 'Play With Me',
-        desc: 'Play With Me is a fullstack responsive web app that allows users to browse, post, and comment on play date events.',
+        desc: 'Play With Me is a fullstack responsive web app that allows users to browse, post, and comment on play date events. After seeing how hard it can be for moms to find playmates for their children, I decided to create this app for anyone looking to set up playdates for their kids.',
         image: 'play-with-me',
         imageDesc: 'Screenshot of play with me app',
         tech: [technologies.react, technologies.node, technologies.postgres,technologies.html, technologies.css, technologies.javascript],
@@ -28,7 +28,7 @@ const projects = [
     },
     {
         name: 'Flower Quiz',
-        desc: 'A ten question quiz on your knowledge of flowers. Progress is tracked and feedback is given after every question. When finished, your final score is displayed and the quiz can be restarted with the click of a button.',
+        desc: 'A ten question quiz on your knowledge of flowers. Progress is tracked and feedback is given after every question. When finished, your final score is displayed and the quiz can be restarted with the click of a button. It is a simple fun quiz that I created after seeing the world\'s largest flower to share some of these interesting facts with others.',
         image: 'flower-quiz',
         imageDesc:'Screenshot of flower quiz app.',
         tech: [technologies.html, technologies.css, technologies.javascript, technologies.jQuery],
@@ -36,7 +36,7 @@ const projects = [
     },
     {
         name: 'Country Insight',
-        desc: 'Input any country name and recieve information about its currency, weather, holidays and more! This app is powered by four separete APIs',
+        desc: 'Input any country name and recieve information about its currency, weather, holidays and more! This app is powered by four separete APIs. Learning simple facts about a country can take a lot of time, so I created this app so users from curious adults to children doing school assignmets can get a quick snapshot of a country in seconds.',
         image: 'country-insight',
         imageDesc: 'Screenshot of Country Insight App',
         tech: [technologies.html, technologies.css, technologies.javascript, technologies.jQuery],
