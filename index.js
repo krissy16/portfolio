@@ -140,17 +140,9 @@ function addIcons(index){
     return icons.join(' ');
 }
 
-function handleForm(){
-    let form = document.getElementById('form')
-    form.addEventListener('submit', () => {
-        window.top.location = 'mailto:...';
-    })
-}
-
 function uponStart(){
     addProjects();
     handleNav();
-    handleForm();
 }
 
 $(uponStart);
